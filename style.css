@@ -11,9 +11,8 @@ font-family: "Roboto", serif;
 }
 
 
-
 main{
-    background-image: url('/Color-Game/img/FaqBgImg.jpg');
+    background-image: url('./img/FaqBgImg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
