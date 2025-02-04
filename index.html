@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Color-Game/style.css" />
+    <title>Color-Guess-Game</title>
+</head>
+
+<body>
+    <main>
+    <div class="color-game-wrapper">
+        <div class="color-game-card">
+        <div class="header">
+            <h1>Color Guessing Game</h1>
+        </div>
+        <!-- Target Color Box -->
+        <div class="big-box" id="colorBox" data-testid="colorBox"></div>
+        <p class="para" data-testid="gameInstructions">
+            Guess the correct color by Clicking the matching color below!
+        </p>
+        <div class="Scrore-status-wrapper">
+            <!-- Score -->
+            <div class="Score-wrapper" data-testid="score">
+            <h3>Score:</h3>
+            <h2 class="scoreBtn" id="Score">0</h2>
+            </div>
+            <div class="status" id="gameStatus" data-testid="gameStatus">
+            Guess right!!!
+            </div>
+        </div>
+        <!-- Color Options -->
+        <div class="Six-Btn-Wrapper color-Options">
+            <div
+                class="Btn-one color-Btn"data-testid="colorOption">
+            </div>
+            <div
+                class="Btn-two color-Btn" data-testid="colorOption">
+            </div>
+            <div
+                class="Btn-three color-Btn" data-testid="colorOption">
+            </div>
+            <div
+                class="Btn-four color-Btn" data-testid="colorOption">
+            </div>
+            <div 
+            class="Btn-five color-Btn" data-testid="colorOption">
+            </div>
+            <div 
+            class="Btn-six color-Btn" data-testid="colorOption">
+        </div>
+        </div>
+        <button
+            class="new-gameBtn"
+            id="newGameButton"
+            data-testid="newGameButton">
+            New Game
+        </button>
+        </div>
+    </div>
+    </main>
+    <script src="/Color-Game/script.js"></script>
+</body>
+</html>
