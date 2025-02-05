@@ -12,22 +12,20 @@
     <div class="color-game-wrapper">
         <div class="color-game-card">
         <div class="header">
-            <h1>Color Guessing Game</h1>
+        <h2 data-testid="gameInstructions">
+            Guess the correct color by Clicking the matching color below!
+        </h2>
         </div>
         <!-- Target Color Box -->
         <div class="big-box" data-testid="colorBox"></div>
-        <p class="para" id="gameInstructions" data-testid="gameInstructions">
-            Guess the correct color by Clicking the matching color below!
-        </p>
-        <div class="Scrore-status-wrapper">
+        <div class="status" data-testid="gameStatus">
+            <!-- Guess right!!! -->
+        </div>
+    
             <!-- Score -->
-            <div class="Score-wrapper" data-testid="score">
+        <div class="Score-wrapper" data-testid="score">
             <h3>Score:</h3>
             <h2 class="scoreBtn" id="Score">0</h2>
-            </div>
-            <div class="status" data-testid="gameStatus">
-            <!-- Guess right!!! -->
-            </div>
         </div>
         <!-- Color Options -->
         <div class="Six-Btn-Wrapper color-Options">
