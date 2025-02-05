@@ -141,30 +141,39 @@ gap: 10px;
 
 /* Define styles for both states */
 .status-good {
-    background-color: green;
-    color: white;
+    background-color: rgb(218, 233, 248) !important;
+    color: black;
     padding: 10px;
     border-radius: 5px;
-    animation: fadeOut 4s forwards;
+    font-size: 18px;
 }
 
 .status-bad {
-    background-color: red;
-    color: white;
+    background-color: rgb(218, 233, 248) !important;
+    color: black;
     padding: 10px;
     border-radius: 5px;
+    font-size: 18px;
+}
+.fadeOut{
     animation: fadeOut 4s forwards;
 }
 
-
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
+    0% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    
+        50% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
 }
 
 @media (max-width: 900px) {
