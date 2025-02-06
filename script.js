@@ -45,7 +45,7 @@ function newRound() {
     button.onclick = () => checkGuess(shuffledColors[index]);
     });
   // Reset only the game status message
-    gameStatus.textContent = "GUESS GAME👏👇👇";
+    gameStatus.textContent = "Guess the correct color!👏👇👇";
 }
 
 // Function to check user's guess
@@ -55,8 +55,7 @@ function checkGuess(selectedColor) {
     gameStatus.classList.add("fadeOut");
     if (selectedColor === targetColor) {
     gameStatus.textContent = "Correct you got it right! 🎉👏😍";
-    gameStatus.classList.add("status-good");
-    gameStatus.classList.remove("status-bad");
+    gameStatus.classList.add("status-message");
 
     score++;
     Score.textContent = score;
@@ -68,8 +67,7 @@ function checkGuess(selectedColor) {
     }, 500);
     } else {
         gameStatus.textContent = "Wrong! Try again. 😢😭";
-        gameStatus.classList.remove("status-good");
-        gameStatus.classList.add("status-bad");
+        gameStatus.classList.add("status-message");
     }
 }
 
